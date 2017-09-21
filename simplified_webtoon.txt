@@ -1,0 +1,193 @@
+llpadding="0" cellspacing="0" class="viewList">
+            <caption><span class="blind">회차별 목록</span></caption>
+            <colgroup><col width="99"><col width="*"><col width="141"><col width="76">
+            </colgroup><thead>
+            <tr>
+                <th scope="col">이미지</th>
+                <th scope="col">제목</th>
+                <th scope="col">별점</th>
+                <th scope="col">등록일</th>
+            </tr>           
+            </thead>
+            <!-- 게임배너 or 광고배너 -->
+            <tbody><tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=250&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','250',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/250/thumbnail_202x120_7f9ac2c5-d9f9-4191-95c9-3d8e501dad16.jpg" title="247화 댓글" alt="247화 댓글" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=250&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','250',event)">247화 댓글</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.70%">평점</em></span>  
+                                <strong>9.97</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.09.15</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=249&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','249',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/249/thumbnail_202x120_f6d475aa-a423-47a5-87d9-e3a24ff69c37.jpg" title="246화 자존심" alt="246화 자존심" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=249&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','249',event)">246화 자존심</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.32%">평점</em></span>  
+                                <strong>9.93</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.09.12</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=248&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','248',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/248/thumbnail_202x120_93b3490c-fe36-4ea0-b031-a2176a7f9378.jpg" title="245화 유미와 바비의 저녁식사 2부" alt="245화 유미와 바비의 저녁식사 2부" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=248&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','248',event)">245화 유미와 바비의 저녁식사 2부</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.76%">평점</em></span>  
+                                <strong>9.98</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.09.08</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=247&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','247',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/247/thumbnail_202x120_cb58d2de-1378-48e7-b234-cbc80e1997b1.jpg" title="244화 유미와 바비의 저녁식사 1부" alt="244화 유미와 바비의 저녁식사 1부" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=247&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','247',event)">244화 유미와 바비의 저녁식사 1부</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.73%">평점</em></span>  
+                                <strong>9.97</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.09.05</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=246&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','246',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/246/thumbnail_202x120_db08b36c-3946-44de-b78e-a248ceda3988.jpg" title="243화 섬세한 관찰자" alt="243화 섬세한 관찰자" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=246&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','246',event)">243화 섬세한 관찰자</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.69%">평점</em></span>  
+                                <strong>9.97</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.09.01</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=245&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','245',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/245/thumbnail_202x120_5e70576e-7985-4b84-890b-0611d3b456dc.jpg" title="242화 후회가 만들어 낸 스킬" alt="242화 후회가 만들어 낸 스킬" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=245&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','245',event)">242화 후회가 만들어 낸 스킬</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.75%">평점</em></span>  
+                                <strong>9.97</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.08.29</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=244&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','244',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/244/thumbnail_202x120_f0ca8a90-3088-4527-8192-34363df6126e.jpg" title="241화 유미의 추리" alt="241화 유미의 추리" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=244&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','244',event)">241화 유미의 추리</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.35%">평점</em></span>  
+                                <strong>9.94</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.08.25</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=243&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','243',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/243/thumbnail_202x120_17adef65-1530-4386-a4a0-42119f13b397.jpg" title="240화 사건을 접수한다!" alt="240화 사건을 접수한다!" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=243&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','243',event)">240화 사건을 접수한다!</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.72%">평점</em></span>  
+                                <strong>9.97</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.08.22</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=242&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','242',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/242/thumbnail_202x120_8d1894d9-e67c-4207-aaf3-e9f0b7450ce9.jpg" title="239화 유미는 인정, 바비는 부정" alt="239화 유미는 인정, 바비는 부정" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=242&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','242',event)">239화 유미는 인정, 바비는 부정</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.76%">평점</em></span>  
+                                <strong>9.98</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.08.18</td>
+                    </tr>
+            <tr>
+                <td>
+                    <a href="/webtoon/detail.nhn?titleId=651673&amp;no=241&amp;weekday=sat/html" onclick="clickcr(this,'lst.img','651673','241',event)">
+                        <img src="http://thumb.comic.naver.net/webtoon/651673/241/thumbnail_202x120_59288d25-f808-451b-abc7-c22dc84663a0.jpg" title="238화 D-1" alt="238화 D-1" width="71" height="41" onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+                        <span class="mask"></span>
+                    </a>
+                    </td>
+                <td class="title">
+                        <a href="/webtoon/detail.nhn?titleId=651673&amp;no=241&amp;weekday=sat/html" onclick="clickcr(this,'lst.title','651673','241',event)">238화 D-1</a>
+                            </td>
+                        <td>
+                            <div class="rating_type"> 
+                                <span class="star"><em style="width:99.76%">평점</em></span>  
+                                <strong>9.98</strong>  
+                            </div> 
+                        </td> 
+                        <td class="num">2017.08.15</td>
+                    </tr>
+            </tbody></table>
