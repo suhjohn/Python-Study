@@ -36,6 +36,7 @@ class NaverWebtoonCrawler:
         # 검색결과가 1개일 경우, self.webtoon을 바로 지정
         if len(webtoon_search_results) == 1:
             self.webtoon = webtoon_search_results[0]
+
         # 2개 이상일 경우, 선택하도록 함
         elif len(webtoon_search_results) >= 2:
             while True:
@@ -252,6 +253,9 @@ class NaverWebtoonCrawler:
             if not init:
                 print('파일이 없습니다')
 
+    def make_index_html(self):
+        
+
     def make_list_html(self):
         """
         self.episode_list를 HTML파일로 만들어준다
@@ -285,19 +289,29 @@ class NaverWebtoonCrawler:
         :return: 파일의 경로
         """
         # webtoon/ 폴더 존재하는지 확인 후 없으면 생성
-        if not os.path.isdir('webtoon'):
-            os.mkdir('webtoon')
-        filename = f'webtoon/{self.webtoon.title_id}.html'
+        if not os.path.isdir(f'webtoon/{self.webtoon.title_id}/html'):
+            os.mkdir(f'webtoon/{self.webtoon.title_id}/html')
+        filename = f'webtoon/{self.webtoon.title_id}/html/{self.webtoon.title_id}.html'
         with open(filename, 'wt') as f:
-            # HTML 앞부분 작성
+            # HTML HEAD
             list_html_head = open('html/list_html_head.html', 'rt').read()
             f.write(list_html_head)
 
-            # episode_list순회하며 나머지 코드 작성
+            # HTML NAVBAR
+            navbar = open('html/navibar.html', 'rt').read()
+            f.write(navbar)
+
+            # INDEX PAGE TOP
+            list_html_list_top = open('html/list_html_list_top.html', 'rt').read()
+            f.write(list_html_list_top.format(
+                title=f'{self.webtoon.title}'
+            ))
+            # HTML EPISODE
             for e in self.episode_list:
                 list_html_tr = open('html/list_html_tr.html', 'rt').read()
                 f.write(list_html_tr.format(
-                    img_url=f'./{self.webtoon.title_id}_thumbnail/{e.no}.jpg',
+                    episode_link = f'../html/Episode_{e.no}.html',
+                    img_url=f'../_thumbnail/{e.no}.jpg',
                     title=e.title,
                     rating=e.rating,
                     created_date=e.created_date
@@ -309,5 +323,8 @@ class NaverWebtoonCrawler:
 
 
 if __name__ == '__main__':
-    crawler = NaverWebtoonCrawler('선천적')
+    crawler = NaverWebtoonCrawler('선천')
     crawler.update_episode_list()
+    for e in crawler.episode_list:
+        print(e)
+    crawler.make_list_html()
