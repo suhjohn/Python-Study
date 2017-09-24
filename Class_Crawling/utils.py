@@ -3,11 +3,9 @@ import requests
 from collections import namedtuple
 from urllib.parse import urlparse, parse_qs
 from bs4 import BeautifulSoup
-
 from episode import Episode
-
-Webtoon = namedtuple('Webtoon', ['title_id', 'img_url', 'title'])
-# Episode = namedtuple('Episode', ['no', 'img_url', 'title', 'rating', 'created_date'])
+import os
+from webtoon import Webtoon
 
 webtoon_yumi = 651673
 webtoon_p = 696617
@@ -68,3 +66,50 @@ def get_webtoon_episode_list(webtoon, page=1):
         episode_list.append(episode)
 
     return episode_list
+
+
+def make_index_html(id_title_dict):
+    webtoon_list = os.listdir('webtoon')
+    if "index.html" in webtoon_list:
+        webtoon_list.remove("index.html")
+    if "webtoon_title_id.txt" in webtoon_list:
+        webtoon_list.remove("webtoon_title_id.txt")
+    print(webtoon_list)
+    filename = f'webtoon/index.html'
+    with open(filename, 'wt') as f:
+        index_head = open('html/index_head.html', 'rt').read()
+        f.write(index_head)
+
+        # HTML NAVBAR
+        navbar = open('html/navibar.html', 'rt').read()
+        f.write(navbar.format(
+            index_page=f'webtoon/index.html'
+        ))
+
+        # Index Top
+        index_body_top = open('html/index_body_top.html', 'rt').read()
+        f.write(index_body_top)
+
+        # Index page contents
+        # Make the index_webtoon_head and index_webtoon_foot every 3 webtoons.
+        for i in range((len(webtoon_list) // 4) + 1):
+            webtoon_head = open('html/index_webtoon_head.html', 'rt').read()
+            f.write(webtoon_head)
+
+            for j in range(4):
+                try:
+                    current_webtoon = webtoon_list[(i * 4) + j]
+                except IndexError:
+                    break
+                webtoon_column = open('html/index_webtoon_col.html', 'rt').read()
+                f.write(webtoon_column.format(
+                    webtoon_url=f'{current_webtoon}/html/{current_webtoon}.html',
+                    thumbnail_image=f'{current_webtoon}/_thumbnail/{current_webtoon}_thumbnail.jpg',
+                    title=f'{id_title_dict[current_webtoon]}'
+                ))
+            webtoon_foot = open('html/index_webtoon_foot.html', 'rt').read()
+            f.write(webtoon_foot)
+
+        index_foot = open('html/index_foot.html', 'rt').read()
+        f.write(index_foot)
+    return filename

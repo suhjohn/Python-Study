@@ -100,7 +100,7 @@ class Episode:
         # 본문 페이지에 대한 HTTP요청 응답
         response = requests.get(url_contents)
         # 응답의 text를 이용해 Soup객체 생성
-        soup = BeautifulSoup(response.text)
+        soup = BeautifulSoup(response.text, 'lxml')
         # soup객체에서 img tag들의 목록을 찾아내기
         img_list = soup.select_one('.wt_viewer').find_all('img')
         # img tag들에서 'src'속성만 가져와 url_img_list리스트를 생성
@@ -119,18 +119,21 @@ class Episode:
         self._make_html()
 
     def _make_html(self):
-        filename = f'webtoon/{self.webtoon.title_id}/html'
+        filename = f'webtoon/{self.webtoon.title_id}'
 
-        with open(f'{filename}/Episode_{self.no}.html', 'wt') as f:
+        with open(f'{filename}/html/Episode_{self.no}.html', 'wt') as f:
 
             # NAVBAR
-            navibar = open('html/navibar.html', 'rt').read()
-            f.write(navibar)
+            navbar = open('html/navibar.html', 'rt').read()
+            f.write(navbar.format(
+                index_page=f'../../index.html'
+            ))
 
             # HTML 앞부분 작성
-            list_html_head = open('html/list_html_head.html', 'rt').read()
+            list_html_head = open('html/head.html', 'rt').read()
             f.write(list_html_head)
-            number_of_pages = len(os.listdir(f'{filename}'))
+            number_of_pages = len(os.listdir(f'{filename}/_images/{self.no}'))
+            print(number_of_pages)
             # episode_list순회하며 나머지 코드 작성
             for i in range(1, number_of_pages):
 
