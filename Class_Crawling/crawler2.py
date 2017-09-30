@@ -274,7 +274,7 @@ class NaverWebtoonCrawler:
             print("파일이 없습니다")
 
 if __name__ == '__main__':
-    crawler = NaverWebtoonCrawler('르완')
+    crawler = NaverWebtoonCrawler('선천적')
     crawler.update_episode_list()
     crawler.load_webtoon_title()
     utils.make_index_html(crawler.webtoon_id_title_dict)
